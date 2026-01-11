@@ -11,15 +11,11 @@ end
 -- Efekt motorlarından gelen verileri alıp ekrana çiz
 function DebuggerUI:render(absEffect, roadNoiseEffect)
     if not self.enabled then return end
-
-    -- Şeffaf bir pencere oluştur
     ui.beginTransparentWindow("Meka FFB Monitor", vec2(300, 100), vec2(20, 200))
-    
     ui.text("Meka FFB Framework - Live Data")
     ui.separator()
-
+    
     -- ABS Durumu için Bar 
-    -- math.abs ile mutlak değeri alıyoruz ki bar hep pozitif dolsun
     local absFill = math.abs(absEffect.currentForce) / absEffect.gain -- 0 ile 1 arası normalize et
     ui.text(string.format("ABS Effect (Force: %.2f)", absEffect.currentForce))
     -- Arka plan (gri), Doluluk (Kırmızı)
