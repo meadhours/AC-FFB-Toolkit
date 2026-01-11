@@ -43,5 +43,3 @@ new(): Constructor for parameters.
 
 calculate(physics, dt): Returns the calculated force for the current frame.
 
-License
-MIT License. Feel free to use this as a base for your own scripts.
