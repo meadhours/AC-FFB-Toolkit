@@ -1,5 +1,4 @@
 # Meka FFB Framework
-
 A modular, object-oriented Lua framework for Assetto Corsa's Custom Shaders Patch (CSP) FFB scripting.
 
 Most FFB scripts available for AC are monolithic (single file, thousands of lines), which makes them hard to read, debug, or extend. This project aims to solve that by applying standard software architecture principles—similar to embedded firmware design—separating signal processing, effect calculation, and logic.
